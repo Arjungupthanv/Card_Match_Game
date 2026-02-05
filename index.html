@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game - Greek Alphabet</title>
+    <meta name="description" content="A beautiful memory card matching game featuring Greek alphabet letters. Match all pairs before your score runs out!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <h1>Memory Card Game</h1>
+            <p class="subtitle">Match the Greek Alphabet Cards</p>
+        </header>
+
+        <div class="game-info">
+            <div class="score-container">
+                <div class="score-label">Score</div>
+                <div class="score-value" id="score">100</div>
+            </div>
+            <button class="reset-btn" id="resetBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                </svg>
+                Reset Game
+            </button>
+        </div>
+
+        <div class="game-status" id="gameStatus">
+            Click cards to find matching pairs!
+        </div>
+
+        <div class="game-board" id="gameBoard">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+
+        <div class="game-rules">
+            <h3>How to Play</h3>
+            <ul>
+                <li>Click on cards to flip them and reveal Greek letters</li>
+                <li>Find matching pairs of identical letters</li>
+                <li>You start with <strong>100 points</strong></li>
+                <li>Each wrong match costs <strong>4 points</strong></li>
+                <li>Match all pairs to win, or lose if score reaches 0!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
